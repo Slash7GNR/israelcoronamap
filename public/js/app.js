@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars, no-undef */
-let map, infoWindow, govData, data, threeDaysButton, allDaysButton, oneWeekButton, twoWeekButton, intervalId;
+let map, infoWindow, govData, data, intervalId;
 let currentPositionMarker = null;
 
 const windowWidth = window.screen.availWidth;
@@ -117,10 +117,6 @@ function initMap() {
 
   init();
 }
-
-const dist = (p1, p2) => {
-  return Math.sqrt(Math.pow(p2.lat() - p1.lat(),2) + Math.pow(p2.lng() - p1.lng(),2));
-};
 
 const getTimestamp = (stringTime) => {
   return new Date(stringTime).getTime();

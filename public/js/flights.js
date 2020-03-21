@@ -48,13 +48,6 @@ const createList = (flightsList) => {
   return strHtml;
 };
 
-// const handleSearchMobile = () => {
-//   const input = document.getElementById('search-input');
-//   const value = input.value.toUpperCase();
-//   let filterdFlights = filterFlights(flights, value);
-//   renderList(filterdFlights);
-// }
-
 // eslint-disable-next-line no-unused-vars
 const handleSearchDesktop = () => {
   // Declare variables
